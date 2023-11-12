@@ -144,7 +144,7 @@ public class RegistroActivity extends AppCompatActivity {
                     public void onSuccess(Void unused) {
                         progressDialog.dismiss();
                         Toast.makeText( RegistroActivity.this,  "cuenta creada con exito",Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(RegistroActivity.this,ClienteActivity.class));
+                        startActivity(new Intent(RegistroActivity.this,LoginActivity.class));
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {

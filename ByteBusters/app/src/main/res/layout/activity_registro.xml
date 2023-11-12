@@ -50,32 +50,23 @@
         app:layout_constraintVertical_bias="0.384"></TextView>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:id="@+id/textInputLayout2"
+    <EditText
+        android:id="@+id/ingresarnombre"
         android:layout_width="290dp"
         android:layout_height="48dp"
         android:background="#90F2F2F2"
         android:drawableEnd="@drawable/usuario"
+        android:ems="10"
         android:hint="John Smith"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426">
 
-        <EditText
-            android:id="@+id/ingresarnombre"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#90F2F2F2"
-            android:drawableEnd="@drawable/usuario"
-            android:hint="John Smith"
-            android:padding="10dp"
-            ></EditText>
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
 
     <TextView
         android:id="@+id/emailtitulo"

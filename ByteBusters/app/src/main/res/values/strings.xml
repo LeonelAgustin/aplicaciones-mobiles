@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">ByteBusters</string>
+    <string name="app_name">TechSolutions</string>
+    <!--MAIN ACTIVITY -->
+    <string name="Btn_login">Login</string>
+    <string name="Btn_registro">Registro</string>
+    <!--REGISTRO ACTIVITY -->
+    <string name="CrearCuentaTXT">Crear una cuenta</string>
+    <string name="NombreET">Nombres</string>
+    <string name="CorreoET">Correo electronico</string>
+    <string name="ContraseñaET">Contraseña</string>
+    <string name="ConfirmarContraseñaET">Coonfirmar Contraseña</string>
+    <string name="RegistrarUsuario">Registrar</string>
+    <string name="TengounacuentaTXT">Tengo una cuenta</string>
+    <!--MENU PRINCIPAL -->
+    <string name="CerrarSesion">Salir</string>
+    <!--LOGIN ACTIVITY -->
+    <string name="IniciarSesionTXT">Iniciar Sesion</string>
+    <string name="CorreoLogin">Correo</string>
+    <string name="Cerrarsesion">Contraseña</string>
+    <string name="PassPoLogin">Ingresar</string>
+    <string name="Btn_Logeo">Tengo una cuenta</string>
+    <string name="UsuarioNuevoTXT">¿No tienes una cuenta? .Registrate</string>
 </resources>
