@@ -43,12 +43,14 @@ public class ClienteActivity extends AppCompatActivity {
             }
         });
         CerrarSesion = (ImageButton) findViewById(R.id.cerrarbtn);
+
         firebaseAuth = FirebaseAuth.getInstance();
         user = firebaseAuth.getCurrentUser();
 
         CerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 SalirAplicacion();
             }
         });

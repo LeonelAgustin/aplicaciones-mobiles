@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         /**/
-        usuario = findViewById(R.id.ingresarmail);
+        usuario = findViewById(R.id.ingresarusuario);
         correo = findViewById(R.id.ingresarmail);
         contraseña = findViewById(R.id.contrasena);
         logearse = findViewById(R.id.iniciarbtn);
@@ -187,18 +187,17 @@ public class LoginActivity extends AppCompatActivity {
                             progressDialog.dismiss();
                             FirebaseUser user = firebaseAuth.getCurrentUser();
 
-                            if(user.getEmail().equals("juan@correo.com")){
+                            if(user.getEmail().equals("leonel@correo.com")){
                                 acceder = new Intent(LoginActivity.this,ClienteActivity.class);
                                 acceder.putExtra("nombre",usuario1);
                                 //debe ser el mismo intent para iniciar la siguiente pantalla y para pasar el string
                                 startActivity(acceder);
 
-                            } else if (user.getEmail().equals("leonel@correo.com")) {
+                            } else if (user.getEmail().equals("jaua@correo.com")) {
                                 startActivity(new Intent(LoginActivity.this,EmpleadoActivity.class));
                             } else if (user.getEmail().equals("luciano@correo.com")) {
                                 
                             }
-
                             Toast.makeText( LoginActivity.this,  "Bienvenido(a): "+user.getDisplayName(),Toast.LENGTH_SHORT).show();
                             finish();
                         }else{
