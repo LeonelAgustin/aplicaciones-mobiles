@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:background="@drawable/fondo1"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="15dp"
+        android:layout_marginStart="15dp"
+        >
+
+        <Button
+            android:id="@+id/volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="atras"
+            tools:ignore="TouchTargetSizeCheck"
+
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cargar"
+        android:layout_marginVertical="20dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CargarPedidoActivity"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="start"
+        >
+        <EditText
+            android:id="@+id/vendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vendedor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cliente"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:hint="Descripción del pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:minHeight="200dp"
+            android:gravity="start"
+            />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:text="Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_marginStart="10dp"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
+
+
